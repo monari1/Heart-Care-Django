@@ -6,6 +6,9 @@ from .models import Appointment
 
 
 class AppointmentView(View):
+
+
+
     def get(self, request, *args, **kwargs):
         context = {
             'doctors': Doctor.objects.all()
